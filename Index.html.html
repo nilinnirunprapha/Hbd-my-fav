@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สุขสันต์วันเกิดค่ะคุณแฟน! ❤️</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fce7f3; /* Light pink background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 2.5rem; /* Increased padding */
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 800px; /* Increased max-width for more content */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem; /* Space between elements */
+        }
+        .message-box {
+            background-color: #fff0f7; /* Lighter pink for message box */
+            padding: 1.5rem;
+            border-radius: 1rem;
+            border: 1px dashed #fbcfe8; /* Dashed border */
+            color: #d82b7d; /* Darker pink text */
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            display: none; /* Hidden by default */
+            transition: all 0.5s ease-in-out;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .message-box.visible {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ffcc00; /* Yellow */
+            border-radius: 50%;
+            animation: fall linear forwards;
+            opacity: 0;
+        }
+        @keyframes fall {
+            0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+        }
+        .confetti:nth-child(2n) { background-color: #ff66b2; /* Pink */ }
+        .confetti:nth-child(3n) { background-color: #99ff99; /* Green */ }
+        .confetti:nth-child(4n) { background-color: #66b2ff; /* Blue */ }
+
+        /* Responsive video container for <video> tag */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 1rem;
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-5xl font-bold text-pink-600 mb-4">สุขสันต์วันเกิดนะคะคุณแฟน! 🎂</h1>
+        <p class="text-xl text-gray-700 mb-6">ถึงจะอวยพรช้าไปเยอะแต่มาอวยพรด้วยตัวเองเลยน๊าาา</p>
+
+        <h2 class="text-3xl font-semibold text-pink-500 mb-4">My Favorite Human</h2>
+        <div class="w-full h-80 bg-gray-200 rounded-xl overflow-hidden flex items-center justify-center mb-6">
+            <img src="IMG_5649.jpg"
+                 alt="รูปภาพหลักของแฟน"
+                 class="w-full h-full object-cover rounded-xl">
+        </div>
+
+        <h2 class="text-3xl font-semibold text-pink-500 mb-4">ช่วงเวลาดีๆ ของเรา</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+            <div class="rounded-xl overflow-hidden shadow-md">
+                <img src="image.jpeg"
+                     alt="รูปภาพที่น่ารัก 1"
+                     class="w-full h-48 object-cover">
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-md">
+                <img src="IMG_5688.jpeg"
+                     alt="รูปภาพที่น่ารัก 2"
+                     class="w-full h-48 object-cover">
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-md">
+                <img src="IMG_1988.jpg"
+                     alt="รูปภาพที่น่ารัก 3"
+                     class="w-full h-48 object-cover">
+            </div>
+            <div class="rounded-xl overflow-hidden shadow-md">
+                <img src="IMG_4014.jpg"
+                     alt="รูปภาพที่น่ารัก 4"
+                     class="w-full h-48 object-cover">
+            </div>
+        </div>
+
+        <h2 class="text-3xl font-semibold text-pink-500 mb-4">ที่เธอถามว่ารักแค่ไหน รักหมดทั้งหัวใจเลยค้าบบ</h2>
+        <div class="video-container mb-6">
+            <video controls autoplay loop muted playsinline class="w-full h-full rounded-xl">
+                <source src="2a51ec48339e42d98b73470a48d2dd8e.mov" type="video/quicktime">
+                เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+            </video>
+        </div>
+
+        <p class="text-lg text-gray-600 mb-6">
+            25 ปีที่ผ่านมาใช้ชีวิตมาได้อย่างดีเลยค้าบ ไม่ว่าที่ผ่านมาจะเจอเรื่องอะไรมาบ้าง อย่างน้อยมันทำให้คุณได้เป็นคุณในวันนี้ แน่นอนว่ามันเป็นเรื่องที่ดีที่สุดแล้วและขอให้ใช้ชีวิตในปีที่26 นี้อย่างสนุกและมีความสุขมากๆนะคะ มีความสุขเยอะๆและใช้ชีวิตให้มีความสุขในทุกๆวันนะคะ…รักคุณ
+        </p>
+
+        <button id="revealMessageBtn"
+                class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full
+                       transition duration-300 ease-in-out transform hover:scale-105
+                       focus:outline-none focus:ring-4 focus:ring-pink-300">
+            คลิกเพื่อดูข้อความพิเศษ!
+        </button>
+
+        <div id="secretMessage" class="message-box mt-4">
+            <p>
+                ขอบคุณที่ใช้ชีวิตมาอย่างดี ขอบคุณที่เกิดมาเจอกัน รู้รักกันและรักกันนะคะ 
+                รักคุณมากๆนะคะ ❤️
+            </p>
+        </div>
+
+        <h2 class="text-3xl font-semibold text-pink-500 mt-6 mb-4">เพลงประกอบ</h2>
+        <audio controls loop class="w-full max-w-md mx-auto rounded-full shadow-lg">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            เบราว์เซอร์ของคุณไม่รองรับการเล่นไฟล์เสียง
+        </audio>
+        <p class="text-sm text-gray-500 mt-2">
+            (เบราว์เซอร์อาจบล็อกการเล่นเพลงอัตโนมัติ คุณอาจต้องกดปุ่มเล่นเอง)
+        </p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const revealMessageBtn = document.getElementById('revealMessageBtn');
+            const secretMessage = document.getElementById('secretMessage');
+
+            revealMessageBtn.addEventListener('click', () => {
+                secretMessage.classList.toggle('visible');
+                revealMessageBtn.textContent = secretMessage.classList.contains('visible') ? 'ซ่อนข้อความ' : 'คลิกเพื่อดูข้อความพิเศษ!';
+                if (secretMessage.classList.contains('visible')) createConfetti();
+            });
+
+            function createConfetti() {
+                const colors = ['#ffcc00', '#ff66b2', '#99ff99', '#66b2ff', '#ff9933'];
+                const body = document.body;
+                for (let i = 0; i < 50; i++) {
+                    const confetti = document.createElement('div');
+                    confetti.classList.add('confetti');
+                    confetti.style.left = Math.random() * 100 + 'vw';
+                    confetti.style.animationDuration = (Math.random() * 2 + 3) + 's';
+                    confetti.style.animationDelay = (Math.random() * 0.5) + 's';
+                    confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    body.appendChild(confetti);
+                    confetti.addEventListener('animationend', () => { confetti.remove(); });
+                }
+            }
+        });
+    </script>
+</body>
+</html>
